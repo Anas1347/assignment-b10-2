@@ -158,3 +158,75 @@ nav {
         right: -10px; /* Adjust position for smaller screens */
     }
 }
+
+/* 2nd section style */
+.habit-section {
+    padding: 50px;
+    background-color: #f2f2f2;
+    text-align: center;
+    background: #111111;
+}
+
+.habit-section h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.habit-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #fff;
+
+}
+
+.habit-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.habit-image {
+    width: 25%; /* Four images per row */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.habit-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.habit-info {
+    margin-top: 10px;
+}
+
+.habit-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+
+}
+
+.habit-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .habit-images {
+        flex-direction: column; /* Display images in a column on smaller screens */
+        align-items: center;
+    }
+
+    .habit-image {
+        width: 100%; /* Full width for images on smaller screens */
+        margin-bottom: 20px; /* Space between images */
+    }
+}
