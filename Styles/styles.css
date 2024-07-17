@@ -1,12 +1,14 @@
 /* styles.css */
 
 body {
-    margin: 0;
+   
+    margin: 0 ;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(56, 54, 54, 0.8), rgba(0, 0, 0, 0.8));
+
 }
 
 nav {
-    background-color: #333;
     color: #fff;
     padding: 15px;
 }
@@ -54,5 +56,105 @@ nav {
 
     .hamburger {
         display: flex;
+    }
+}
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 50px;
+    color: #fff;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    width: 40%; /* Adjust width as needed */
+    max-width: 100%; /* Ensure maximum width */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.about-text h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-text p {
+    margin: 20px 0;
+}
+
+.about-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.bordered-text {
+    padding: 25px 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.top-right {
+    top: 200px;
+    right: 200px;
+}
+
+.bottom-left {
+    bottom: 80px;
+    left: 150px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .about {
+        padding: 20px; /* Reduce padding */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-text {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .about-image {
+        margin-top: 20px; /* Space between sections */
+    }
+
+    .top-right {
+        top: auto;
+        right: auto;
+        bottom: 250px; /* Adjust position for smaller screens */
+        left: 10px; /* Adjust position for smaller screens */
+    }
+
+    .bottom-left {
+        bottom: auto;
+        left: auto;
+        top: 20px; /* Adjust position for smaller screens */
+        right: -10px; /* Adjust position for smaller screens */
     }
 }
