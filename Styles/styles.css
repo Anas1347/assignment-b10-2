@@ -1,11 +1,10 @@
 /* styles.css */
 
 body {
-   
-    margin: 0 ;
+    margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(56, 54, 54, 0.8), rgba(0, 0, 0, 0.8));
-
+    background:rgb(36, 33, 33);
+    color: #fff; /* Apply text color for the body */
 }
 
 nav {
@@ -58,13 +57,13 @@ nav {
         display: flex;
     }
 }
+
 /* About Section */
 .about {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Align items at the top */
     padding: 50px;
-    color: #fff;
 }
 
 .about-text {
@@ -106,7 +105,6 @@ nav {
 
 .bordered-text {
     padding: 25px 35px;
-    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #333;
     border-radius: 5px;
     font-weight: bold;
@@ -159,12 +157,10 @@ nav {
     }
 }
 
-/* 2nd section style */
+/* Habit Section */
 .habit-section {
     padding: 50px;
-    background-color: #f2f2f2;
     text-align: center;
-    background: #111111;
 }
 
 .habit-section h2 {
@@ -179,7 +175,6 @@ nav {
     line-height: 1.6;
     margin-bottom: 30px;
     color: #fff;
-
 }
 
 .habit-images {
@@ -210,17 +205,16 @@ nav {
     font-size: 18px;
     margin-bottom: 5px;
     color: #fff;
-
 }
 
 .habit-info p {
     font-size: 14px;
-    color: #666;
 }
 
-/* Responsive Design */
+/* Responsive Design for Habit Section */
 @media (max-width: 576px) {
     .habit-images {
+        width: 100%;
         flex-direction: column; /* Display images in a column on smaller screens */
         align-items: center;
     }
@@ -228,5 +222,77 @@ nav {
     .habit-image {
         width: 100%; /* Full width for images on smaller screens */
         margin-bottom: 20px; /* Space between images */
+    }
+}
+
+/* Two-Part Section */
+.two-part-section {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.two-part-section .left-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.two-part-section .left-side h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.two-part-section .left-side p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.two-part-section .section-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.two-part-section .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-part-section .right-side img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* Responsive Design for Two-Part Section */
+@media (max-width: 576px) {
+    .two-part-section {
+        width: 100%;
+        flex-direction: column; /* Stack parts vertically on small screens */
+        padding: 30px;
+    }
+
+    .two-part-section .left-side, .two-part-section .right-side {
+        width: 100%; /* Full width for both sides on smaller screens */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .two-part-section .left-side h2 {
+        font-size: 20px;
+    }
+
+    .two-part-section .left-side p {
+        font-size: 14px;
     }
 }
