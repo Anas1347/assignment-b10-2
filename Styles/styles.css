@@ -10,6 +10,8 @@ body {
 nav {
   color: #fff;
   padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-container {
@@ -71,6 +73,8 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-text {
@@ -121,8 +125,8 @@ nav {
 }
 
 .top-right {
-  top: 200px;
-  right: 200px;
+  top: 100px;
+  left: 260px;
 }
 
 .bordered-text {
@@ -136,8 +140,8 @@ nav {
 .bottom-left {
   display: flex;
   align-items: center;
-  bottom: 80px;
-  left: 150px;
+  bottom: 60px;
+  right: 280px;
 }
 
 .red-circle {
@@ -169,17 +173,12 @@ nav {
   }
 
   .top-right {
-    top: auto;
-    right: auto;
-    margin-top: -300px;
-    margin-left: 220px;
+   left: 200px;
+    
   }
 
   .bottom-left {
-    bottom: auto;
-    left: auto;
-    margin-top: 200px;
-    margin-left: -140px;
+    right: 180px;
   }
 }
 
@@ -187,6 +186,8 @@ nav {
 .habit-section {
   padding: 50px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .habit-section h2 {
@@ -256,11 +257,12 @@ nav {
   display: flex;
   padding: 50px;
   align-items: center;
-  margin: 0 auto;
+
   margin-top: 40px;
   background-color: rgb(44, 51, 51);
   border-radius: 30px;
-  max-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .two-part-section .left-side {
@@ -327,10 +329,12 @@ nav {
 
 .calculator-title {
   text-align: center;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .calculate-section {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -433,8 +437,8 @@ th {
   }
 }
 .meet-our-team-section {
-  max-width: 800px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
@@ -503,10 +507,12 @@ th {
 
 .footer-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #141516;
   padding: 20px;
   border-top: 1px solid #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-part {
