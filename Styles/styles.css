@@ -474,3 +474,50 @@ th {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #141516;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-part {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-part h2, .footer-part h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-part p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-part ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-part ul li {
+  margin-bottom: 10px;
+}
+
+.footer-part ul li a {
+  text-decoration: none;
+  color: #ebeff5;
+}
+
+.footer-part ul li a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  .footer-section
+  {
+    flex-direction: column;
+  }
+}
