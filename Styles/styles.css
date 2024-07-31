@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: rgb(36, 33, 33);
-  color: #fff; 
+  color: #fff;
 }
 
 nav {
@@ -27,13 +27,20 @@ nav {
   display: flex;
   gap: 20px;
   border: 1px solid rgb(97, 83, 83);
-  padding: 13px;
+  padding: 2px;
   border-radius: 50px;
 }
 
 .nav-links a {
   color: #fff;
   text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+.nav-links a.active {
+  background-color: orangered;
+  color: #fff;
 }
 
 .hamburger {
@@ -55,29 +62,28 @@ nav {
 
   .hamburger {
     display: flex;
-    margin-left: 250px;
+    margin-left: 150px;
   }
 }
 
 /* About Section */
 .about {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; 
+  justify-content: space-around;
   padding: 50px;
 }
 
 .about-text {
-  flex: 1;
   padding: 20px;
-  width: 40%; 
-  max-width: 100%; 
-  margin-bottom: 20px; 
+  width: 40%;
+  margin-bottom: 20px;
+
+  margin-left: 200px;
 }
 
 .about-text h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -87,13 +93,15 @@ nav {
 
 .about-btn {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: rgb(107, 86, 78);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
 }
-
+.about-btn-style {
+  background-color: orangered;
+}
 .about-image {
   flex: 1;
   position: relative;
@@ -117,11 +125,28 @@ nav {
   right: 200px;
 }
 
+.bordered-text {
+  padding: 15px 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+}
+
 .bottom-left {
+  display: flex;
+  align-items: center;
   bottom: 80px;
   left: 150px;
 }
 
+.red-circle {
+  width: 30px;
+  height: 30px;
+  background-color: orangered;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 .about-image img {
   max-width: 100%;
   height: auto;
@@ -130,13 +155,13 @@ nav {
 /* Responsive Design */
 @media (max-width: 576px) {
   .about {
-    padding: 20px; 
-    display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .about-text {
-    width: 100%; 
+    margin-left: 0;
+    width: 80%;
   }
 
   .about-image {
@@ -146,15 +171,15 @@ nav {
   .top-right {
     top: auto;
     right: auto;
-    bottom: 250px;
-    left: 10px;
+    margin-top: -300px;
+    margin-left: 220px;
   }
 
   .bottom-left {
     bottom: auto;
     left: auto;
-    top: 20px;
-    right: -10px;
+    margin-top: 200px;
+    margin-left: -140px;
   }
 }
 
@@ -231,11 +256,11 @@ nav {
   display: flex;
   padding: 50px;
   align-items: center;
-  width: 800px;
   margin: 0 auto;
   margin-top: 40px;
-  background-color: rgb(31, 53, 53);
+  background-color: rgb(44, 51, 51);
   border-radius: 30px;
+  max-width: 800px;
 }
 
 .two-part-section .left-side {
@@ -257,10 +282,10 @@ nav {
 
 .two-part-section .section-btn {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: orangered;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
@@ -280,14 +305,12 @@ nav {
 /* Responsive Design for Two-Part Section */
 @media (max-width: 576px) {
   .two-part-section {
-    width: 100%;
     flex-direction: column;
     padding: 30px;
   }
 
   .two-part-section .left-side,
   .two-part-section .right-side {
-    width: 100%;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -305,104 +328,107 @@ nav {
 .calculator-title {
   text-align: center;
   margin: 0 auto;
-  
 }
+
 .calculate-section {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #333;
-}
-.input-section{
-display: flex;
-flex-direction: column;
-align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-/*Responsive Design calculate section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive Design calculate section */
 @media (max-width: 576px) {
-    .calculate-section{
-        flex-direction: column;
-    }
+  .calculate-section {
+    flex-direction: column;
   }
-  .bmi-calculator-section {
-    display: flex;
-    gap: 20px;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
 }
 
-.chart-box, .input-box {
-    background-color: #312828;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1;
+.bmi-calculator-section {
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
-.bmi-calculator-chart h1, .bmi-calculator-form h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.chart-box,
+.input-box {
+  background-color: rgb(44, 51, 51);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.bmi-calculator-chart h1,
+.bmi-calculator-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid #8a7373;
-    padding: 8px;
-    text-align: center;
+th,
+td {
+  border: 1px solid #8a7373;
+  padding: 8px;
+  text-align: center;
 }
 
 th {
-    background-color: #312b2b;
+  background-color: rgb(44, 51, 51);
 }
 
 .input-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.input-group input, .input-group select {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.input-group input,
+.input-group select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgb(44, 51, 51);
+  color: #ffffff;
 }
 
 .input-group select.full-width {
-    flex: 2;
-}
-
-.button-group {
-    display: flex;
-    justify-content: center;
+  flex: 2;
 }
 
 .button-group button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: orangered;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50px;
 }
 
 .button-group button:hover {
-    background-color: #0056b3;
+  background-color: #e0444c;
 }
 @media (max-width: 576px) {
-  .bmi-calculator-section{
+  .bmi-calculator-section {
     flex-direction: column;
   }
-  .full-width{
+  .full-width {
     width: 50px;
   }
 }
@@ -410,7 +436,7 @@ th {
   max-width: 800px;
   margin: auto;
   padding: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 .meet-our-team-section h1 {
@@ -436,7 +462,7 @@ th {
 .team-member {
   position: relative;
   width: 100%;
-  padding-bottom: 100%; 
+  padding-bottom: 100%;
   overflow: hidden;
 }
 
@@ -470,7 +496,7 @@ th {
   font-size: 14px;
 }
 @media (max-width: 576px) {
-  .team-grid{
+  .team-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -488,7 +514,8 @@ th {
   padding: 0 20px;
 }
 
-.footer-part h2, .footer-part h3 {
+.footer-part h2,
+.footer-part h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -509,15 +536,29 @@ th {
 
 .footer-part ul li a {
   text-decoration: none;
-  color: #ebeff5;
+  color: #76a5a3;
 }
 
 .footer-part ul li a:hover {
   text-decoration: underline;
 }
 @media (max-width: 576px) {
-  .footer-section
-  {
+  .footer-section {
     flex-direction: column;
   }
+}
+.footer-text {
+  font-size: 12px;
+  color: #aaa;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.footer-line {
+  border: 0;
+  border-top: 1px solid #555;
+  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
 }

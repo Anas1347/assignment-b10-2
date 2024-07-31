@@ -13,7 +13,7 @@
           <span style="color: orangered; font-size: 30px"><i>Fitness</i></span>
         </div>
         <div class="nav-links">
-          <a href="#">Home</a>
+          <a href="#" class="active">Home</a>
           <a href="#">Service</a>
           <a href="#">Contact</a>
           <a href="#">About</a>
@@ -25,63 +25,78 @@
         </div>
       </div>
     </nav>
+
     <section class="about">
       <!-- First Section -->
       <div class="about-text">
-        <h1>Get body in</h1>
-        <h1>Shape and stay</h1>
+        <h1>Get Your Body in</h1>
+        <h1><i>Shape</i> and Stay</h1>
         <h1>Healthy</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          vehicula ultricies risus, at fermentum dui.
+          Join us on a journey to a healthier lifestyle. Our programs are
+          designed to help you achieve your fitness goals and maintain a
+          balanced lifestyle.
         </p>
         <div class="button-row">
-          <button class="about-btn">Learn More</button>
-          <button class="about-btn">Join Now</button>
+          <button class="about-btn about-btn-style">Join Club Now</button>
+          <button class="about-btn">Download App</button>
         </div>
       </div>
 
       <!-- Second Section -->
       <div class="about-image">
-        <div class="bordered-text top-right">Top Right</div>
-        <div class="bordered-text bottom-left">Bottom Left</div>
+        <div class="bordered-text top-right">
+          <p>
+            <span style="font-weight: bold; font-size: 35px">500+</span><br />
+            Free Workout Videos
+          </p>
+        </div>
+        <div class="bordered-text bottom-left">
+          <div class="red-circle"></div>
+          <div>
+            <p>350+ <br />Video Tutorials</p>
+          </div>
+        </div>
         <img src="./images/Images 2.png" alt="Background Image" />
       </div>
     </section>
     <!-- 2nd section -->
     <section class="habit-section">
-      <h2>Change Your Habit</h2>
+      <h2>Change Your Habits</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Transform your daily routine with our effective habit-forming
+        strategies. Discover how small changes can lead to significant
+        improvements in your health and well-being.
       </p>
       <div class="habit-images">
         <div class="habit-image">
-          <img src="./images/image 3.png" alt="Image 1" />
+          <img src="./images/image 3.png" alt="Healthy Eating" />
           <div class="habit-info">
-            <h3>Name 1</h3>
-            <p>Description 1</p>
+            <h3>Healthy Eating</h3>
+            <p>Learn about balanced diets and nutrition tips.</p>
           </div>
         </div>
         <div class="habit-image">
-          <img src="./images/image 2.png" alt="Image 2" />
+          <img src="./images/image 2.png" alt="Regular Exercise" />
           <div class="habit-info">
-            <h3>Name 2</h3>
-            <p>Description 2</p>
+            <h3>Regular Exercise</h3>
+            <p>Incorporate physical activity into your daily routine.</p>
           </div>
         </div>
         <div class="habit-image">
-          <img src="./images/image 4.png" alt="Image 3" />
+          <img src="./images/image 4.png" alt="Adequate Sleep" />
           <div class="habit-info">
-            <h3>Name 3</h3>
-            <p>Description 3</p>
+            <h3>Adequate Sleep</h3>
+            <p>
+              Understand the importance of quality sleep for overall health.
+            </p>
           </div>
         </div>
         <div class="habit-image">
-          <img src="./images/image 5.png" alt="Image 4" />
+          <img src="./images/image 5.png" alt="Stress Management" />
           <div class="habit-info">
-            <h3>Name 4</h3>
-            <p>Description 4</p>
+            <h3>Stress Management</h3>
+            <p>Find techniques to manage and reduce stress effectively.</p>
           </div>
         </div>
       </div>
@@ -89,15 +104,16 @@
     <!-- section three -->
     <section class="two-part-section">
       <div class="left-side">
-        <h2>Title Here</h2>
+        <h2>Discover Our Programs</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Explore our range of fitness programs designed to meet different needs
+          and goals. Whether you're looking to lose weight, build muscle, or
+          improve your overall fitness, we have something for you.
         </p>
-        <button class="section-btn">Learn More</button>
+        <button class="section-btn">Join Now</button>
       </div>
       <div class="right-side">
-        <img src="./images/run.jpg" alt="Image Description" />
+        <img src="./images/run.jpg" alt="Fitness Program" />
       </div>
     </section>
     <!-- Calculator Section -->
@@ -105,7 +121,8 @@
       <div class="calculator-title">
         <h1>BMI Calculator</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, ut.
+          Use our BMI calculator to assess your body mass index and determine <br> if
+          you're within a healthy weight range. 
         </p>
       </div>
 
@@ -117,7 +134,7 @@
               <thead>
                 <tr>
                   <th>BMI</th>
-                  <th>Weight Loss</th>
+                  <th>Weight Range</th>
                 </tr>
               </thead>
               <tbody>
@@ -160,20 +177,11 @@
             <div class="input-group">
               <select class="full-width">
                 <option>Select an activity factor</option>
-                <option>Sedentary (little or no exercise)</option>
-                <option>
-                  Lightly active (light exercise/sports 1-3 days/week)
-                </option>
-                <option>
-                  Moderately active (moderate exercise/sports 3-5 days/week)
-                </option>
-                <option>
-                  Very active (hard exercise/sports 6-7 days a week)
-                </option>
-                <option>
-                  Super active (very hard exercise/physical job & exercise
-                  2x/day)
-                </option>
+                <option>Sedentary</option>
+                <option>Lightly active</option>
+                <option>Moderately active</option>
+                <option>Very active</option>
+                <option>Super active</option>
               </select>
             </div>
             <div class="button-group">
@@ -188,47 +196,47 @@
     <section class="meet-our-team-section">
       <h1>Meet Our Team</h1>
       <p>
-        We have a fantastic team of professionals who are passionate about their
-        work. Here are some of our key members:
+        We have a dedicated team of fitness <br> experts and enthusiasts who are
+        committed to helping you achieve your health goals. 
       </p>
       <div class="team-grid">
         <div class="team-member">
-          <img src="./images/trainer1.png" alt="Team Member 1" />
+          <img src="./images/trainer1.png" alt="Jane Doe" />
           <div class="team-info">
             <h2>Jane Doe</h2>
             <p>CEO</p>
           </div>
         </div>
         <div class="team-member">
-          <img src="./images/trainer2.png" alt="Team Member 2" />
+          <img src="./images/trainer2.png" alt="John Smith" />
           <div class="team-info">
             <h2>John Smith</h2>
             <p>CTO</p>
           </div>
         </div>
         <div class="team-member">
-          <img src="./images/trainer3.png" alt="Team Member 3" />
+          <img src="./images/trainer3.png" alt="Mary Johnson" />
           <div class="team-info">
             <h2>Mary Johnson</h2>
             <p>CFO</p>
           </div>
         </div>
         <div class="team-member">
-          <img src="./images/trainer4.png" alt="Team Member 4" />
+          <img src="./images/trainer4.png" alt="James Brown" />
           <div class="team-info">
             <h2>James Brown</h2>
             <p>COO</p>
           </div>
         </div>
         <div class="team-member">
-          <img src="./images/trainer5.png" alt="Team Member 5" />
+          <img src="./images/trainer5.png" alt="Patricia Garcia" />
           <div class="team-info">
             <h2>Patricia Garcia</h2>
             <p>CMO</p>
           </div>
         </div>
         <div class="team-member">
-          <img src="./images/trainer6.png" alt="Team Member 6" />
+          <img src="./images/trainer6.png" alt="Michael Davis" />
           <div class="team-info">
             <h2>Michael Davis</h2>
             <p>Head of Development</p>
@@ -240,7 +248,9 @@
 
     <footer class="footer-section">
       <div class="footer-part">
-        <h2>Fitness</h2>
+        <h2>
+          <span style="color: orangered; font-size: 30px"><i>Fitness</i></span>
+        </h2>
         <p>
           Your go-to place for all fitness needs. Join us to achieve your goals
           and stay healthy.
@@ -256,7 +266,7 @@
         </ul>
       </div>
       <div class="footer-part">
-        <h3>Get Started</h3>
+        <h3>Explore</h3>
         <ul>
           <li><a href="#">Fitness</a></li>
           <li><a href="#">Platform</a></li>
@@ -265,5 +275,9 @@
         </ul>
       </div>
     </footer>
+    <hr class="footer-line" />
+    <div class="footer-text">
+      <p>All rights reserved @Fitness 2024</p>
+    </div>
   </body>
 </html>
